@@ -1,0 +1,28 @@
+{
+  "name": "EUM Student Timetable",
+  "options": [
+    {
+      "title": "Program family",
+      "name": "family",
+      "type": "string",
+      "default": "ALL",
+      "hint": "Use ALL for automatic rotation through all timetable groups, or enter one family name exactly as listed in timetable.json."
+    },
+    {
+      "title": "Rotation seconds",
+      "name": "rotation_seconds",
+      "type": "string",
+      "default": "12",
+      "hint": "How long each timetable section remains on screen (5–120 seconds)."
+    }
+  ],
+  "presets": {
+    "allprograms": {
+      "desc": "Rotate automatically through all timetable groups.",
+      "config": {
+        "family": "ALL",
+        "rotation_seconds": "12"
+      }
+    }
+  }
+}
